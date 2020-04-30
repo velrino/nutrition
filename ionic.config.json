@@ -1,0 +1,7 @@
+{
+  "name": "nutrition",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
