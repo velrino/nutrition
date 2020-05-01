@@ -8,18 +8,20 @@
 
   <div>
     <ion-row>
-      <ion-col size="6" *ngFor="let item of component.menu">
-        <ion-card>
+      <ion-col size="6" *ngFor="let item of component.menu | sortBy:'asc':'order'">
+        <ion-card (click)="redirect(item)">
           <ion-card-content class="ion-text-center">
             <ion-icon [name]="item.icon" [color]="item.color"></ion-icon>
             <ion-card-title>{{ item.title }}</ion-card-title>
           </ion-card-content>
         </ion-card>
       </ion-col>
-
     </ion-row>
-
-
-
   </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon name="chatbubble" color="secondary"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
