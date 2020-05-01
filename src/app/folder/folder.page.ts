@@ -9,14 +9,26 @@ import { BaseComponent } from 'src/app/shared/components/base.components';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
-  public component = {
-    darkMode: true
+  component = {
+    menu: [
+      {
+        order: 1,
+        color: 'warning',
+        icon: 'restaurant',
+        title: 'Lorem',
+        link: '',
+      }
+    ]
   }
   public folder: string;
 
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+  }
+
+  redirect(item) {
+    console.log(item);
   }
 }
