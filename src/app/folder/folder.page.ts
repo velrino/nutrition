@@ -31,15 +31,6 @@ export class FolderPage implements OnInit {
       },
       {
         order: 4,
-        color: 'secondary',
-        asset: '/assets/icon/fitness.svg',
-        title: 'Treino',
-        link: '',
-        show: true,
-        isIcon: false
-      },
-      {
-        order: 4,
         color: 'success',
         asset: 'logo-whatsapp',
         title: 'Agende',
@@ -50,8 +41,8 @@ export class FolderPage implements OnInit {
       {
         order: 4,
         color: 'tertiary',
-        asset: 'calendar',
-        title: 'Retorno',
+        asset: 'calendar-outline',
+        title: 'Item',
         link: '',
         show: true,
         isIcon: true
@@ -59,11 +50,20 @@ export class FolderPage implements OnInit {
       {
         order: 4,
         color: 'secondary',
-        asset: 'stats-chart',
+        asset: 'stats-chart-outline',
         title: 'Avaliação',
         link: '',
         show: true,
         isIcon: true
+      },
+      {
+        order: 4,
+        color: 'secondary',
+        asset: '/assets/icon/fitness.svg',
+        title: 'Treino',
+        link: '',
+        show: true,
+        isIcon: false
       },
       {
         order: 4,

@@ -61,6 +61,11 @@
 :root[mode="md"] {
   --ion-font-family: "Circe" !important;
   font-family: "Circe" !important;
+  .ios {
+    font-family: "Circe" !important;
+    font-weight: normal !important;
+  }
+
 }
 
 .wrap-text {
@@ -71,7 +76,7 @@
 
 img.circle {
   border-radius: 50%;
-  height: 15vh;
+  height: 100px;
 }
 
 :root {

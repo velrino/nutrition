@@ -10,7 +10,9 @@ ion-card {
   margin: unset;
   margin-top: 0.5rem;
   min-height: 17vh !important;
-  // max-height: 17vh !important;
+  p {
+    font-size: 20px !important;
+  }
 }
 
 ::ng-deep {
@@ -35,6 +37,8 @@ ion-card {
   text-align: left;
   position: relative;
   padding-bottom: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
 
   .home-header-content {
     color: #1e1e1e;

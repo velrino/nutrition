@@ -8,11 +8,11 @@
   <div class="home-header">
     <ion-row class="home-header-content">
       <ion-col size="4">
-        <img src="https://avatars2.githubusercontent.com/u/8322467?s=460&u=00e2ee42c81280c66dbf65da200b4e22b5ad2d99&v=4" class="circle">
+        <img src="/assets/imgs/profile.jpg" class="circle">
       </ion-col>
       <ion-col size="8">
-        <h5 class="wrap-text">Olá, Denis</h5>
-        <h5 class="wrap-text">Seu retorno será: 24/08 - 10:00</h5>
+        <h5 class="wrap-text">Olá, <strong>Guilherme</strong></h5>
+        <h5 class="wrap-text">Retorno: <strong>24/08 - 10:00</strong></h5>
       </ion-col>
     </ion-row>
     <!-- <div class="center">
@@ -29,7 +29,7 @@
           <ion-card-content class="ion-text-center">
             <ion-icon *ngIf="item.isIcon" [name]="item.asset" [color]="item.color"></ion-icon>
             <img *ngIf="!item.isIcon" [src]="item.asset" class="icon-svg">
-            <ion-card-title>{{ item.title }}</ion-card-title>
+            <p>{{ item.title }}</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
