@@ -5,38 +5,43 @@ ion-icon {
 
 ion-card {
   background-color: white !important;
-  // border: 1px solid #b4b4b4 !important;
   webkit-box-shadow: none !important;
   box-shadow: none !important;
+  margin: unset;
+  margin-top: 0.5rem;
 }
 
 ::ng-deep {
   body.dark {
     ion-card {
       background-color: #1e1e1e !important;
-      // border: 1px solid #333333 !important;
       webkit-box-shadow: none !important;
       box-shadow: none !important;
+    }
+    .loremipsum {
+      background: #1e1e1e !important;
+      .center {
+        color: white !important;
+      }
     }
   }
 }
 
 .loremipsum {
-  background: #80daee;
+  background: white;
   height: 30vh;
   text-align: center;
   position: relative;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
   .center {
-    // background: blue;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100vw;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #1e1e1e;
     img {
       border-radius: 50%;
       height: 15vh;
