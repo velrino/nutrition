@@ -69,11 +69,17 @@
   white-space: nowrap;
 }
 
+img.circle {
+  border-radius: 50%;
+  height: 15vh;
+}
+
 :root {
   .icon-svg {
     // filter: invert(74%) sepia(41%) saturate(2678%) hue-rotate(107deg) brightness(107%) contrast(86%) !important;
     filter: invert(75%) sepia(58%) saturate(1913%) hue-rotate(349deg) brightness(97%) contrast(97%) !important;
-    max-height: 75px;
-    margin: 10%;
+    min-height: 50px;
+    max-height: 50px;
+    margin: 9px;
   }
 }
