@@ -5,19 +5,30 @@
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div class="loremipsum">
-    <div class="center">
+  <div class="home-header">
+    <ion-row class="home-header-content">
+      <ion-col size="4">
+        <img src="https://avatars2.githubusercontent.com/u/8322467?s=460&u=00e2ee42c81280c66dbf65da200b4e22b5ad2d99&v=4" class="circle">
+      </ion-col>
+      <ion-col size="8">
+        <h5 class="wrap-text">Olá, Denis</h5>
+        <h5 class="wrap-text">Seu retorno será: 24/08 - 10:00</h5>
+      </ion-col>
+    </ion-row>
+    <!-- <div class="center">
       <img src="https://avatars2.githubusercontent.com/u/8322467?s=460&u=00e2ee42c81280c66dbf65da200b4e22b5ad2d99&v=4">
       <h5 class="wrap-text">Olá, Denis</h5>
-    </div>
+      <h5 class="wrap-text">Seu retorno será</h5>
+      <h5 class="wrap-text">24/08 - 10:00</h5>
+    </div> -->
   </div>
   <div>
     <ion-row>
       <ion-col size="6" *ngFor="let item of component.menu | sortBy:'asc':'order'">
         <ion-card (click)="redirect(item)">
           <ion-card-content class="ion-text-center">
-            <img src="/assets/icon/fitness.svg" class="icon-svg">
-            <!-- <ion-icon [name]="item.icon" [color]="item.color"></ion-icon> -->
+            <ion-icon *ngIf="item.isIcon" [name]="item.asset" [color]="item.color"></ion-icon>
+            <img *ngIf="!item.isIcon" [src]="item.asset" class="icon-svg">
             <ion-card-title>{{ item.title }}</ion-card-title>
           </ion-card-content>
         </ion-card>

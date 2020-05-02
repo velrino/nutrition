@@ -9,6 +9,8 @@ ion-card {
   box-shadow: none !important;
   margin: unset;
   margin-top: 0.5rem;
+  min-height: 17vh !important;
+  // max-height: 17vh !important;
 }
 
 ::ng-deep {
@@ -18,22 +20,28 @@ ion-card {
       webkit-box-shadow: none !important;
       box-shadow: none !important;
     }
-    .loremipsum {
+    .home-header {
       background: #1e1e1e !important;
-      .center {
+      .home-header-content {
         color: white !important;
       }
     }
   }
 }
 
-.loremipsum {
+.home-header {
   background: white;
-  height: 30vh;
-  text-align: center;
+  // height: 30vh;
+  text-align: left;
   position: relative;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+  padding-bottom: 1rem;
+
+  .home-header-content {
+    color: #1e1e1e;
+    padding-top: 3vh;
+  }
+  // border-bottom-left-radius: 20%;
+  // border-bottom-right-radius: 20%;
   .center {
     margin: 0;
     position: absolute;
@@ -42,9 +50,5 @@ ion-card {
     width: 100vw;
     transform: translate(-50%, -50%);
     color: #1e1e1e;
-    img {
-      border-radius: 50%;
-      height: 15vh;
-    }
   }
 }
